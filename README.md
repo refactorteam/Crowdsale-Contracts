@@ -1,6 +1,6 @@
 # ReFactor Crowdsale Contracts
 
-![](https://github.com/refactorteam/Crowdsale-Contracts/images/refactor_logo.jpg)
+![](https://github.com/refactorteam/Crowdsale-Contracts/blob/master/images/refactor_logo.jpg)
 
 Ethereum smart contracts that distribute re:factor tokens (REFT).
 
