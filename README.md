@@ -1,5 +1,4 @@
-# Crowdsale-Contracts
-ReFactor Crowdsale Contracts
+# ReFactor Crowdsale Contracts
 
 Ethereum smart contracts that distribute re:factor tokens (REFT).
 
