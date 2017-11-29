@@ -206,13 +206,13 @@ contract BurnableToken is StandardToken {
 
 }
 
-contract ReFactor  is BurnableToken {
+contract ReFactor is BurnableToken {
     
   string public constant name = "re:factor";
    
   string public constant symbol = "REFT";
     
-  uint32 public constant decimals = 18;
+  uint8 public constant decimals = 18;
 
   uint256 public INITIAL_SUPPLY = 100000000 * 1 ether;
 
@@ -233,11 +233,6 @@ contract Crowdsale is Ownable {
 
   uint start;
     
-    modifier onlyOwner() {
-        require(msg.sender == owner);
-        _;
-    }
-  
     function Start() constant returns (uint) {
         return start;
     }
@@ -263,22 +258,30 @@ contract Crowdsale is Ownable {
     }
   
     function setRate(uint newRate) onlyOwner {
-        rate = newRate;
+        rate = newRate * (10**18);
     }
 
   function Crowdsale() {
     multisig = ADDRESS_FOR_ETH;
-    rate = rate;
+    rate = RATE;
     start = START_DATETIME;
     period = 72;
   }
-
+  
   modifier saleIsOn() {
     require(now > start && now < start + period * 1 days);
     _;
   }
 
-  function createTokens() saleIsOn payable {
+  /**
+ * @10000000000000000 - 16 null = 0.01 min payment ETH.
+ */
+  modifier limitation() {
+    require(msg.value >= 10000000000000000);
+    _;
+  }
+
+  function createTokens() limitation saleIsOn payable {
     multisig.transfer(msg.value);
     uint tokens = rate.mul(msg.value).div(1 ether);
     token.transfer(msg.sender, tokens);
