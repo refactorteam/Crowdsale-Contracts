@@ -5,10 +5,11 @@ Ethereum smart contracts that distribute re:factor tokens (REFT).
 # re:factor Token (REFT)
 
 REFT is an ERC-20 compatible token.
+
 1.	The token contract is created by the crowdsale contract;
 2.	REFT has fixed total supply;
 3.	Tokens offered for the crowdsale are transferred to the crowdsale contract at creation time;
-4.	5,000,000 REFT are reserved fro pre-sale investors;
+4.	5,000,000 REFT are reserved for pre-sale investors;
 5.	All remaining tokens are stored on re:factor balance.
 
 REFT movement is restricted until explicitly allowed. Only parties authorized to transfer REFT until that are:
@@ -31,4 +32,4 @@ Only registered investors are allowed to take part in the crowdsale.
 No change as tokens are sold in token subunits and the price of a subunit is infinitesimal. If some investor hits the hard cap, her change will be refunded with a manual Ether transfer.
 
 # Finalization
-If the crowdsale ends, but not all the tokens offered are sold out, the crowdsale contract owner should call finalize() function of the crowdsale contract. Then all the remaining tokens are transferred to re:factor.
+If the crowdsale ends, but not all the tokens offered are sold out, all remaining tokens are transferred to re:factor.
