@@ -6,15 +6,15 @@ Ethereum smart contracts that distribute re:factor tokens (REFT).
 # re:factor Token (REFT)
 
 REFT is an ERC-20 compatible token.
-1.	The token contract is created by the crowdsale contract.
-2.	BKX has fixed total supply
-3.	Tokens offered for the crowdsale are transferred to the crowdsale contract at creation time
-4.	5,000,000 REFT are reserved fro pre-sale investors
-5.	All remaining tokens are stored on re:factor balance
+1.	The token contract is created by the crowdsale contract;
+2.	REFT has fixed total supply;
+3.	Tokens offered for the crowdsale are transferred to the crowdsale contract at creation time;
+4.	5,000,000 REFT are reserved fro pre-sale investors;
+5.	All remaining tokens are stored on re:factor balance.
 
 REFT movement is restricted until explicitly allowed. Only parties authorized to transfer REFT until that are:
-1.	The crowdsale contract -- to distribute tokens purchased at the crowdsale
-2.	re:factor -- to distribute among the team and pre-sale investors 
+1.	The crowdsale contract -- to distribute tokens purchased at the crowdsale;
+2.	re:factor -- to distribute among the team and pre-sale investors.
 
 # Pre-Sale Contract
 5,000,000 of tokens has been distributed during the pre-sale phase. Pre-Sale starts at the specified timestamp and ends when either the specified timestamp is reached or all the tokens are sold.
