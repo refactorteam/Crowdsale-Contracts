@@ -1,5 +1,7 @@
 # ReFactor Crowdsale Contracts
 
+![](https://github.com/refactorteam/Crowdsale-Contracts/images/refactor_logo.jpg)
+
 Ethereum smart contracts that distribute re:factor tokens (REFT).
 
 # re:factor Token (REFT)
@@ -33,3 +35,5 @@ No change as tokens are sold in token subunits and the price of a subunit is inf
 
 # Finalization
 If the crowdsale ends, but not all the tokens offered are sold out, all remaining tokens are transferred to re:factor.
+
+<a target="_blank" href="http://refactor.pro">ReFactor</a>
