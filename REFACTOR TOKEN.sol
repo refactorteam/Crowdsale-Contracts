@@ -1,5 +1,14 @@
 pragma solidity ^0.4.16;
 
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// Set values before deploy
+// ----------------------------
+// ADDRESS_FOR_TOKENS
+// ADDRESS_FOR_ETH
+// RATE
+// START_DATETIME
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 /**
  * @title ERC20Basic
  * @dev Simpler version of ERC20 interface
